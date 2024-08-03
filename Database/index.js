@@ -5,8 +5,6 @@ const isValid = require("./validate")
 const app=express()
 app.use(express.json())
 
-
-
 app.get("/",async(req,res)=>{
     let data=await User.find()
     res.send(data)
